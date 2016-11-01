@@ -1,0 +1,59 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('bundles/maithcommonadmin/css/style_guide_plus_base.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/maithcommonadmin/css/login-v3.css') }}" />
+	<style type="text/css">#hsnav .primary li:hover a + div.sub, #hsnav .primary li.hover a + div.sub {display: block;}</style>    
+{% endblock %}
+{% block javascripts %}
+<script type="text/javascript">
+	  $(document).ready(function(){
+		  $("p.label_infield label").inFieldLabels();
+	  });
+	</script>
+{% endblock %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+
+
+<div id="login-wrapper">
+  <div id="inner-wrapper">
+	<div class="form-container">
+	  <form action="{{ path("fos_user_security_check") }}" method="post" accept-charset="utf-8" class="auth-box" id="hs-login">
+		<input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+		<p class="label_infield">
+		  <label for="username">{{ 'security.login.username'|trans }}</label>
+		  <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" maxlength="80" size="30" class="hs-input has-fake-placeholder" spellcheck="false"/>
+		</p>
+		<p class="label_infield">
+		  <label for="password">{{ 'security.login.password'|trans }}</label>
+		  <input type="password" id="password" name="_password" required="required" size="30" class="hs-input has-fake-placeholder" />
+		</p>
+		<a href="{{ path('fos_user_resetting_request')}}" class="forgot-password">Forgot?</a>          
+		<div>
+		</div>
+
+		<div class="hs-error {% if error %} visible {% endif %}">
+            {% if error %}
+                <p>{{ error|trans }}</p>
+            {% endif %}
+		</div>
+
+		<div id="submit">
+		  <span>
+			<input type="checkbox" id="remember_me" name="_remember_me" value="on" style="margin:0;padding:0" />
+			<label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+		  </span>
+		  
+		  <button type="submit" tabindex="0" id="loginBtn"  name="_submit" class="hs-button primary">{{ 'security.login.submit'|trans }}</button>
+		</div>
+	  </form>		          
+	 </div>
+  </div>
+</div>
+
+
+
+{% endblock fos_user_content %}

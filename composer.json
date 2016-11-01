@@ -11,6 +11,24 @@
             "app/AppCache.php"
         ]
     },
+    "repositories": [
+    {
+        "type" : "vcs",
+        "url" : "https://github.com/rsantellan/symfony2-maith-admin.git"
+    },
+    {
+        "type" : "vcs",
+        "url" : "https://github.com/rsantellan/symfony2-maith-images.git"
+    },
+    {
+        "type" : "vcs",
+        "url" : "https://github.com/rsantellan/symfony2-maith-translator.git"
+    },
+    {
+        "type" : "vcs",
+        "url" : "https://github.com/rsantellan/symfony2-maith-users.git"
+    }
+    ],
     "require": {
         "php": ">=5.3.9",
         "symfony/symfony": "2.8.*",
@@ -20,7 +38,16 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "friendsofsymfony/user-bundle": "dev-master",
+        "genemu/form-bundle": "2.2.*",
+        "stof/doctrine-extensions-bundle": "1.*",
+        "imagine/Imagine": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "Maith/Common/AdminBundle": "dev-master",
+        "Maith/Common/ImageBundle": "dev-master",
+        "Maith/Common/TranslatorBundle": "dev-master",
+        "Maith/Common/UsersBundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",

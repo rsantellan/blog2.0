@@ -1,0 +1,5 @@
+homepage:
+    pattern:  /{_locale}
+    defaults: { _controller: AppBundle:Default:index }
+    requirements:
+        _locale: '%app.locales%'
