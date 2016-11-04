@@ -44,6 +44,7 @@
         "stof/doctrine-extensions-bundle": "1.*",
         "imagine/Imagine": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "jms/security-extra-bundle": "1.6.1",
         "Maith/Common/AdminBundle": "dev-master",
         "Maith/Common/ImageBundle": "dev-master",
         "Maith/Common/TranslatorBundle": "dev-master",
