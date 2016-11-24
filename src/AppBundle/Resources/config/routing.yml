@@ -1,5 +1,18 @@
+app_admin_category:
+    resource: "@AppBundle/Resources/config/routing/category.yml"
+    prefix:   /admin/category
+
+app_admin_complextag:
+    resource: "@AppBundle/Resources/config/routing/complextag.yml"
+    prefix:   /admin/complextag
+    
+app_admin_project:
+    resource: "@AppBundle/Resources/config/routing/project.yml"
+    prefix:   /admin/project
+
 homepage:
-    pattern:  /{_locale}
-    defaults: { _controller: AppBundle:Default:index }
+    path:  /{_locale}
+    defaults: { _controller: AppBundle:Default:index,  _locale: %locale% }
     requirements:
         _locale: '%app.locales%'
+

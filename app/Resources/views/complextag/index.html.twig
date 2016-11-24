@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Complextags list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Orden</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for complexTag in complexTags %}
+            <tr>
+                <td><a href="{{ path('admin_complextag_show', { 'id': complexTag.id }) }}">{{ complexTag.id }}</a></td>
+                <td>{{ complexTag.name }}</td>
+                <td>{{ complexTag.description }}</td>
+                <td>{{ complexTag.orden }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('admin_complextag_show', { 'id': complexTag.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('admin_complextag_edit', { 'id': complexTag.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_complextag_new') }}">Create a new complexTag</a>
+        </li>
+    </ul>
+{% endblock %}

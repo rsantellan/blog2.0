@@ -81,4 +81,8 @@ stof_doctrine_extensions:
             timestampable: true
             sortable: true
             sluggable: true
-            translatable: true    
+            translatable: true
+
+# Jms expressions.
+#jms_security_extra:
+#    expressions: true

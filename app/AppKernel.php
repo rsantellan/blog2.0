@@ -22,12 +22,12 @@ class AppKernel extends Kernel
             new Maith\Common\TranslatorBundle\MaithCommonTranslatorBundle(),
             /** Third party **/
             new FOS\UserBundle\FOSUserBundle(),
-            new Genemu\Bundle\FormBundle\GenemuFormBundle(),
+            //new Genemu\Bundle\FormBundle\GenemuFormBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
-            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
-            new JMS\AopBundle\JMSAopBundle(),
-            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            //new JMS\DiExtraBundle\JMSDiExtraBundle($this),
+            //new JMS\AopBundle\JMSAopBundle(),
+            //new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             /** Site **/
             new AppBundle\AppBundle(),
 
