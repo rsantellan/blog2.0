@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="es" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="657151dcfdae1a48f61976301a77dabd" resname="rsantellan_site_menu_logo">
+        <source>rsantellan_site_menu_logo</source>
+        <target>Rodrigo Santellan</target>
+      </trans-unit>
+      <trans-unit id="7f0fd2aaefd4d373c07ef7809cfec154" resname="rsantellan_site_menu_home">
+        <source>rsantellan_site_menu_home</source>
+        <target>Inicio</target>
+      </trans-unit>
+      <trans-unit id="b52ed166e5869f8a03d2c98795571455" resname="rsantellan_site_menu_projects">
+        <source>rsantellan_site_menu_projects</source>
+        <target>Proyectos</target>
+      </trans-unit>
+      <trans-unit id="5d01a474f25ca766d9968435e5f00db7" resname="rsantellan_site_menu_about">
+        <source>rsantellan_site_menu_about</source>
+        <target>Acerca de mi</target>
+      </trans-unit>
+      <trans-unit id="540f2cfb17bca198858670919bf9d8eb" resname="rsantellan_site_menu_contact">
+        <source>rsantellan_site_menu_contact</source>
+        <target>Contacto</target>
+      </trans-unit>
+      <trans-unit id="9a9906a804ec8120cdd6fa0de4d053e6" resname="rsantellan_site_menu_spanish">
+        <source>rsantellan_site_menu_spanish</source>
+        <target>Español</target>
+      </trans-unit>
+      <trans-unit id="4ef400e7dd72e7ebe752ac745b9d3922" resname="rsantellan_site_menu_english">
+        <source>rsantellan_site_menu_english</source>
+        <target>English</target>
+      </trans-unit>
+      <trans-unit id="67f2eff39192b4f73101d485845f1f2b" resname="rsantellan_contact_page_title">
+        <source>rsantellan_contact_page_title</source>
+        <target>P&amp;aacute;gina de contacto</target>
+      </trans-unit>
+      <trans-unit id="1510e4f04e5c837afb35705a9e23b625" resname="rsantellan_contact_title">
+        <source>rsantellan_contact_title</source>
+        <target>Necesita ayuda? Soporte o otro punto de vista?</target>
+      </trans-unit>
+      <trans-unit id="a018ad1a123ef8eabd55cc0e73bba739" resname="rsantellan_contact_description">
+        <source>rsantellan_contact_description</source>
+        <target>No dude en consultar.</target>
+      </trans-unit>
+      <trans-unit id="e00dc60ea0123a3fc6946276e0f919b7" resname="rsantellan_site_index_title">
+        <source>rsantellan_site_index_title</source>
+        <target>Rodrigo Santellán - Analista en Tecnologias de la información</target>
+      </trans-unit>
+      <trans-unit id="74980fad887f20006580eebee9ba0d87" resname="rsantellan_site_index_banner_1">
+        <source>rsantellan_site_index_banner_1</source>
+        <target>Manejo y mantenimiento de servidores &lt;em&gt;Scripting en bash&lt;/em&gt;</target>
+      </trans-unit>
+      <trans-unit id="89b2de0140e7ef1df012d0d6a7c9fced" resname="rsantellan_site_index_banner_2">
+        <source>rsantellan_site_index_banner_2</source>
+        <target>Manejo de distintos frameworks PHP &lt;em&gt;CodeIgniter, Symfony, Symfony 2, Zend&lt;/em&gt;</target>
+      </trans-unit>
+      <trans-unit id="24ef929eca91abce6140def35c03f49c" resname="rsantellan_site_index_banner_3">
+        <source>rsantellan_site_index_banner_3</source>
+        <target>Python &lt;em&gt;Scripting para servidores, manejo remoto y web crawling&lt;/em&gt;</target>
+      </trans-unit>
+      <trans-unit id="d51be740f992301ce76b47fad54016eb" resname="rsantellan_site_index_banner_4">
+        <source>rsantellan_site_index_banner_4</source>
+        <target>&lt;em&gt;Manejo e instalaci&amp;oacute;n de sitios&lt;/em&gt;</target>
+      </trans-unit>
+      <trans-unit id="b980f509479adcf4900b235ba2885a81" resname="rsantellan_site_index_banner_5">
+        <source>rsantellan_site_index_banner_5</source>
+        <target>&lt;em&gt;Optimizaci&amp;oacute;n y Manejo de base de datos. Migraciones y escabilidades.&lt;/em&gt;</target>
+      </trans-unit>
+      <trans-unit id="c15a11f51c6519872b63cdbb97450027" resname="rsantellan_site_index_projects_latest">
+        <source>rsantellan_site_index_projects_latest</source>
+        <target>Ultimos proyectos</target>
+      </trans-unit>
+      <trans-unit id="e953081e0fb1c82b91456a2a2454c566" resname="rsantellan_site_index_projects_view_all">
+        <source>rsantellan_site_index_projects_view_all</source>
+        <target>Ver todos</target>
+      </trans-unit>
+      <trans-unit id="9b691cb936b3af7e9fa208e42294b7c9" resname="rsantellan_admin_menu_dashboard">
+        <source>rsantellan_admin_menu_dashboard</source>
+        <target>Inicio</target>
+      </trans-unit>
+      <trans-unit id="f63e187c136c7130186742ba75b3f504" resname="rsantellan_admin_menu_projects">
+        <source>rsantellan_admin_menu_projects</source>
+        <target>Proyectos</target>
+      </trans-unit>
+      <trans-unit id="34f818db08a61eb14d3bf93374667d08" resname="rsantellan_admin_menu_categories">
+        <source>rsantellan_admin_menu_categories</source>
+        <target>Categorias</target>
+      </trans-unit>
+      <trans-unit id="60f3ab16f5a13c950b951142e8d2a386" resname="rsantellan_admin_menu_blocks">
+        <source>rsantellan_admin_menu_blocks</source>
+        <target>Bloques</target>
+      </trans-unit>
+      <trans-unit id="70f0889c2dd8897a06e6e53127c1acd1" resname="rsantellan_site_menu_language">
+        <source>rsantellan_site_menu_language</source>
+        <target>Idiomas</target>
+      </trans-unit>
+      <trans-unit id="0a12a11b78ecc17a8d5a499427b1bf69" resname="rsantellan_site_category">
+        <source>rsantellan_site_category</source>
+        <target>Categoria:</target>
+      </trans-unit>
+      <trans-unit id="44ff3d6065f5d0f424eaa76bd52446ff" resname="rsantellan_site_projects">
+        <source>rsantellan_site_projects</source>
+        <target>Proyectos</target>
+      </trans-unit>
+      <trans-unit id="fcff28f88b43de91aa45a6a02df6b627" resname="rsantellan_site_categories_all">
+        <source>rsantellan_site_categories_all</source>
+        <target>Todos</target>
+      </trans-unit>
+      <trans-unit id="a07a610880aeab1917bbb68609df25c1" resname="rsantellan_site_about_me_title">
+        <source>rsantellan_site_about_me_title</source>
+        <target>Acerca de mi</target>
+      </trans-unit>
+      <trans-unit id="390f6126adfe5260d6ca402f78b6ed61" resname="rsantellan_site_about_me_first_paragraph">
+        <source>rsantellan_site_about_me_first_paragraph</source>
+        <target>&lt;p&gt;&amp;iexcl;Hola! mi nombre es Rodrigo Santell&amp;aacute;n, tengo 29 a&amp;ntilde;os y soy programador web. Desde hace 5 a&amp;ntilde;os que trabajo creando p&amp;aacute;ginas y sitios web para distintas empresas.&lt;/p&gt;&#13;
+&lt;p&gt;Desde peque&amp;ntilde;o me interes&amp;oacute; la computaci&amp;oacute;n, escribiendo mis primeros programas en Pascal y cuando fui m&amp;aacute;s grande, en Visual Basic 6. Me cost&amp;oacute; encaminar mi profesi&amp;oacute;n ya que durante algunos a&amp;ntilde;os trabaj&amp;eacute; en otros rubros y estuve viviendo en Irlanda para poder mejorar mi ingl&amp;eacute;s. Al volver decid&amp;iacute; que ya ten&amp;iacute;a todo lo necesario para poder enfocarme en lo que quer&amp;iacute;a hacer, as&amp;iacute; que estudi&amp;eacute; en la Universidad ORT del Uruguay la carrera t&amp;eacute;cnica de Analista en Tecnolog&amp;iacute;as de la informaci&amp;oacute;n.&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="38b1a04ceb998c12a196f965759dcfeb" resname="rsantellan_site_about_me_second_image_caption">
+        <source>rsantellan_site_about_me_second_image_caption</source>
+        <target>&lt;p&gt;Praesent odio ligula, dapibus sed, tincidunt eget, dictum nibh 435&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="95328f77333d8847e2a0d4b5790b0a6a" resname="rsantellan_site_about_me_second_paragraph">
+        <source>rsantellan_site_about_me_second_paragraph</source>
+        <target>&lt;p&gt;Desde entonces he estado trabajando en el rubro. Primero haciendo pruebas de testing automatizado en Selenium para aplicaciones web y luego trabajando en una empresa que hac&amp;iacute;a p&amp;aacute;ginas web en PHP Symfony. All&amp;iacute; aprend&amp;iacute; scripting, manejo y mantenimiento de servidores, y funcionamiento interno de PHP,&amp;nbsp; dado que trabajaba con sitios de gran concurrencia y nosotros hac&amp;iacute;amos su mantenimiento.&lt;/p&gt;&#13;
+&lt;p&gt;Un par de a&amp;ntilde;os despu&amp;eacute;s en ese trabajo no hab&amp;iacute;a m&amp;aacute;s lugar para el crecimiento profesional as&amp;iacute; que comenc&amp;eacute; a trabajar en una empresa que no se dedica a la realizaci&amp;oacute;n de p&amp;aacute;ginas web comerciales, sino a sitios de administraci&amp;oacute;n de los productos. En esta empresa me encuentro trabajando actualmente y estoy a cargo del desarrollo e investigaci&amp;oacute;n del &amp;aacute;rea web, haciendo posible que diariamente manejemos miles de ingresos a p&amp;aacute;ginas administrativas que trabajan con millones de datos.&lt;/p&gt;&#13;
+&lt;p&gt;A su vez me dedico a realizar trabajos freelance, muchos de los cu&amp;aacute;les podr&amp;aacute;n ver en la secci&amp;oacute;n &amp;ldquo;Proyectos realizados&amp;rdquo;..&lt;/p&gt;&#13;
+&lt;p&gt;Si desean m&amp;aacute;s informaci&amp;oacute;n sobre m&amp;iacute; o desean preguntarme algo no duden en utilizar el formulario de &amp;ldquo;Contacto&amp;rdquo;. &amp;iexcl;Saludos!&lt;/p&gt;</target>
+      </trans-unit>
+      <trans-unit id="aaa32556e9192149ccd918ec46b204e4" resname="rsantellan_site_used_complex_tags">
+        <source>rsantellan_site_used_complex_tags</source>
+        <target>Bloques</target>
+      </trans-unit>
+      <trans-unit id="75b273a31c6800bc9d0a04b3c0ad090c" resname="contact.form.name">
+        <source>contact.form.name</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="3f396238d9b7a5c8b62b4e7f099f7665" resname="contact.form.name.placeholder">
+        <source>contact.form.name.placeholder</source>
+        <target>¿Cual es tu nombre?</target>
+      </trans-unit>
+      <trans-unit id="d12ba126715ad93fa99febeb97567271" resname="contact.form.email.placeholder">
+        <source>contact.form.email.placeholder</source>
+        <target>Así te puedo responder!</target>
+      </trans-unit>
+      <trans-unit id="82e0578857b215c0cb8b8294e5a40843" resname="contact.form.subject">
+        <source>contact.form.subject</source>
+        <target>Asunto</target>
+      </trans-unit>
+      <trans-unit id="85ad3802aa2b1204785f86c5ea9ff1ce" resname="contact.form.subject.placeholder">
+        <source>contact.form.subject.placeholder</source>
+        <target>El asunto del email.</target>
+      </trans-unit>
+      <trans-unit id="d8e04406559dd968c9efd1e2d94dbbbb" resname="contact.form.message">
+        <source>contact.form.message</source>
+        <target>Mensaje</target>
+      </trans-unit>
+      <trans-unit id="637b3b3c2192f6b11dc717ff1237e218" resname="contact.form.message.placeholder">
+        <source>contact.form.message.placeholder</source>
+        <target>Tu mensaje para mí...</target>
+      </trans-unit>
+      <trans-unit id="f1b16683881a113636a60409ac1b2191" resname="rsantellan_contact_send">
+        <source>rsantellan_contact_send</source>
+        <target>Enviar</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

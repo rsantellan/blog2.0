@@ -42,26 +42,12 @@ class ComplexTagController extends Controller
             $em->persist($complexTag);
             $em->flush($complexTag);
 
-            return $this->redirectToRoute('admin_complextag_show', array('id' => $complexTag->getId()));
+            return $this->redirectToRoute('admin_complextag_edit', array('id' => $complexTag->getId()));
         }
 
         return $this->render('complextag/new.html.twig', array(
             'complexTag' => $complexTag,
             'form' => $form->createView(),
-        ));
-    }
-
-    /**
-     * Finds and displays a complexTag entity.
-     *
-     */
-    public function showAction(ComplexTag $complexTag)
-    {
-        $deleteForm = $this->createDeleteForm($complexTag);
-
-        return $this->render('complextag/show.html.twig', array(
-            'complexTag' => $complexTag,
-            'delete_form' => $deleteForm->createView(),
         ));
     }
 

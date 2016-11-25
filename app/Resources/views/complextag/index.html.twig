@@ -1,43 +1,61 @@
-{% extends 'base.html.twig' %}
+{% extends 'MaithCommonAdminBundle::adminlayout.html.twig' %}
+
+{% block pagestylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/maithcommonadmin/admin/vendor/chosen/chosen.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/maithcommonadmin/admin/vendor/datatables/jquery.dataTables.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/maithcommonadmin/admin/vendor/chosen/chosen.jquery.min.js') }}"></script>
+    <script src="{{ asset('bundles/maithcommonadmin/admin/vendor/datatables/jquery.dataTables.js') }}"></script>
+    <script src="{{ asset('bundles/maithcommonadmin/admin/js/datatables.js') }}"></script>
+{% endblock %}
 
 {% block body %}
-    <h1>Complextags list</h1>
 
-    <table>
+<section class="panel panel-color">
+  <header class="panel-heading text-uppercase"><i class="fa fa-lg fa-cogs"></i> {% trans %}admin_complextag_title{% endtrans %}</header>
+  <div class="panel-body">
+    <div class="table-responsive no-border">
+      <table class="table table-bordered table-striped mg-t datatable dataTable">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Orden</th>
-                <th>Actions</th>
-            </tr>
+          <tr>
+            <th>{% trans %}admin_complextag_order{% endtrans %}</th>
+            <th>{% trans %}admin_complextag_name{% endtrans %}</th>
+            <th>{% trans %}admin_complextag_description{% endtrans %}</th>
+            <th>{% trans %}admin_complextag_actions{% endtrans %}</th>
+          </tr>
         </thead>
+        <tfoot>
+          <tr>
+            <th>{% trans %}admin_complextag_order{% endtrans %}</th>
+            <th>{% trans %}admin_complextag_name{% endtrans %}</th>
+            <th>{% trans %}admin_complextag_description{% endtrans %}</th>
+            <th>{% trans %}admin_complextag_actions{% endtrans %}</th>
+          </tr>
+        </tfoot>
         <tbody>
         {% for complexTag in complexTags %}
             <tr>
-                <td><a href="{{ path('admin_complextag_show', { 'id': complexTag.id }) }}">{{ complexTag.id }}</a></td>
+                <td>{{ complexTag.orden }}</td>
                 <td>{{ complexTag.name }}</td>
                 <td>{{ complexTag.description }}</td>
-                <td>{{ complexTag.orden }}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('admin_complextag_show', { 'id': complexTag.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('admin_complextag_edit', { 'id': complexTag.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    <a href="{{ path('admin_complextag_edit', { 'id': complexTag.id }) }}"><i class="fa fa-pencil-square-o fa-2x"></i></a>
                 </td>
             </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <ul>
-        <li>
-            <a href="{{ path('admin_complextag_new') }}">Create a new complexTag</a>
-        </li>
-    </ul>
+        {% endfor %}          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+<div class="row">
+  <div class="col-lg-12 text-left">
+      <a href="{{ path('admin_complextag_new') }}" class="btn btn-success">
+          <i class="fa fa-pencil-square-o"></i> {% trans %}admin_complextag_create{% endtrans %}
+      </a>
+  </div>
+</div>
 {% endblock %}

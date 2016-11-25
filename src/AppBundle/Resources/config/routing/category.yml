@@ -3,11 +3,6 @@ admin_category_index:
     defaults: { _controller: "AppBundle:Category:index" }
     methods:  GET
 
-admin_category_show:
-    path:     /{id}/show
-    defaults: { _controller: "AppBundle:Category:show" }
-    methods:  GET
-
 admin_category_new:
     path:     /new
     defaults: { _controller: "AppBundle:Category:new" }

@@ -42,7 +42,7 @@ class ProjectController extends Controller
             $em->persist($project);
             $em->flush($project);
 
-            return $this->redirectToRoute('admin_project_show', array('id' => $project->getId()));
+            return $this->redirectToRoute('admin_project_edit', array('id' => $project->getId()));
         }
 
         return $this->render('project/new.html.twig', array(
@@ -51,19 +51,6 @@ class ProjectController extends Controller
         ));
     }
 
-    /**
-     * Finds and displays a project entity.
-     *
-     */
-    public function showAction(Project $project)
-    {
-        $deleteForm = $this->createDeleteForm($project);
-
-        return $this->render('project/show.html.twig', array(
-            'project' => $project,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
 
     /**
      * Displays a form to edit an existing project entity.
