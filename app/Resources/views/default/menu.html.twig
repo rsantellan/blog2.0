@@ -1,0 +1,36 @@
+<!-- START MENU WRAPPER -->
+<div id="menu-wrapper">
+  <div class="container">
+    <div class="four columns">
+      <div id="logo">
+        <a href="{{ path('homepage')}}">
+          <img src="{{ asset('images/logo.png') }}" alt="{% trans %}rsantellan_site_menu_logo{% endtrans %}" />
+        </a>
+      </div><!-- .logo -->
+    </div><!-- four columns -->
+    <div class="twelve columns navigation">
+      <div id="menu" class="fix-fish-menu">
+        <ul id="nav" class="sf-menu">
+          <li class="{% if (activemenu is defined) and activemenu == 'home' %}active{% endif %}">
+            <a href="{{ path('homepage')}}">{% trans %}rsantellan_site_menu_home{% endtrans %}</a>
+          </li>
+          <li class="{% if (activemenu is defined) and activemenu == 'projects' %}active{% endif %}">
+            <a href="javascript:void(0)">{% trans %}rsantellan_site_menu_projects{% endtrans %}</a>
+            {{ render_esi(controller('AppBundle:Default:menuCategories')) }}
+          </li>
+          <li class="{% if (activemenu is defined) and activemenu == 'aboutme' %}active{% endif %}"> 
+              <a href="{{ path('about_me') }}">{% trans %}rsantellan_site_menu_about{% endtrans %}</a>
+          </li>
+          <li><a href="{{ path('contact') }}">{% trans %}rsantellan_site_menu_contact{% endtrans %}</a></li>
+          <li><a href="#">{% trans %}rsantellan_site_menu_language{% endtrans %}</a>
+            <ul>
+              <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'es'})) }}">{% trans %}rsantellan_site_menu_spanish{% endtrans %}</a></li>
+              <li><a href="{{  path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'}))}}">{% trans %}rsantellan_site_menu_english{% endtrans %}</a></li>
+            </ul>
+          </li>
+        </ul>  <!-- end #nav  -->
+      </div>	<!-- end #menu  -->	
+    </div><!-- .twelve columns -->
+  </div><!-- .container -->
+</div><!-- #slider-wraper -->
+<!-- END MENU WRAPPER -->

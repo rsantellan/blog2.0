@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+{% block title %}Rodrigo Santellan - {% if (page_title is defined) %}{% trans %}rsantellan_site_category{% endtrans %}{{ page_title }}{% else %}{% trans %}rsantellan_site_projects{% endtrans %}{% endif %}{% endblock %}
+{% block javascripts %}
+<script type="text/javascript" src="{{ asset('js/jquery.isotope.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.colorbox-min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/projectsColumns.js') }}"></script>
+{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{{ asset('css/colorbox.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}" />
+{% endblock %}
+{% block body %}
+
+<!-- START SEPARATOR  -->
+<div id="separator">
+  <div class="btop-1px"></div>
+  <div class="container">
+    <!-- start separator -->
+    <div class="sixteen columns">
+      <h4 class="page-title">
+      {% if (page_title is defined) %}
+        {% trans %}rsantellan_site_category{% endtrans %} {{ page_title }}
+      {% else %}
+          {% trans %}rsantellan_site_projects{% endtrans %}
+      {% endif %}
+      </h4>
+    </div><!-- sixteen columns -->
+  </div><!-- .container -->
+  <div class="bbottom-1px"></div>
+</div><!-- #separator -->
+<!-- END SEPARATOR -->	
+
+<!-- START PORTFOLIO WRAPPER -->
+<div class="container main-wrapper">
+  <div id="main-content">
+
+
+    <div id="filterby"></div>
+
+    <!-- start filter -->
+    <ul id="filters" class="clearfix">
+      {% if categories|length > 0 %}
+            <li><a href="#" data-filter="*" class="selected">{% trans %}rsantellan_site_categories_all{% endtrans %}</a></li>
+            {% for category in categories %}
+              <li><a href="#" data-filter=".{{ category.id }}">{{ category.name }}</a></li>
+            {% endfor %}
+      {% else %}
+        <li><a href="#" data-filter=".{{ category.id }}">{{ category.name }}</a></li>
+      {% endif %}
+      
+      
+    </ul>
+    <!-- end filter -->
+
+    <div id="container-portfolio" class="portfolio-3">
+      {% for project in projects %}
+      <!-- Item #1 -->
+      <div class="item-block one-third column {% for category in project.category %} {{ category.id }} {% endfor %}">
+        <!-- start item block -->
+        <div class="stack">
+          <div class="title"><a href="{{ path('project_show', {'slug': project.slug})}}">{{ project.name }}</a></div>
+          <div class="cta-arrow">
+            <a class="bg-arrow" href="{{ path('project_show', {'slug': project.slug})}}">
+              <img src="{{ asset('images/icons/pixel-arrow-right.png') }}" alt="" />
+            </a>
+            <span class="rd-arrow"></span>
+          </div><!-- .cta-arrow -->
+        </div><!-- stack -->
+        <div class="block">
+          <img alt="{{ project.name[:45] }}" src="{{ project.id | mAvatar(project.fullClassName, 'main', 1, true) | mImage(283, 262, 'rce') }}" />
+          <div class="mask">
+            <a href="#img_colorbox_{{project.id}}" data-rel="zoom-img" class="zoom-icon inline"></a>
+            <a href="{{ path('project_show', {'slug': project.slug})}}" class="link-icon"></a>
+          </div>
+          <div style='display:none'>
+            <div id="img_colorbox_{{project.id}}">
+              <img alt="{{ project.name[:45] }}" src="{{ project.id | mAvatar(project.fullClassName, 'main', 1, true) | mImage(566, 524, 'rce') }}" />
+            </div>
+          </div>
+        </div><!-- block -->  
+      </div><!-- item-block -->
+      {% endfor %}
+    </div><!-- #container-portfolio -->
+
+    <!-- START PAGINATION-->
+    <div id="nav-pagination" class="sixteen columns">
+ 
+    </div><!-- #nav-pagination -->
+
+  </div><!-- main-content -->
+
+</div><!-- .container -->
+
+
+<!-- END PORTFOLIO WRAPPER -->
+{% endblock %}

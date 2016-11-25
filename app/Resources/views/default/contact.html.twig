@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+{% block title %}Rodrigo Santellan - {% trans %}rsantellan_contact_page_title{% endtrans %}{% endblock %}
+{% block body %} 
+
+<!-- START SEPARATOR  -->
+<div id="separator">
+	<div class="btop-1px"></div>
+	<div class="container">
+		<!-- start separator -->
+		<div class="sixteen columns">
+			<h4 class="page-title">{% trans %}rsantellan_contact_page_title{% endtrans %}</h4>
+		</div><!-- sixteen columns -->
+	</div><!-- .container -->
+	<div class="bbottom-1px"></div>
+</div><!-- #separator -->
+<!-- END SEPARATOR -->	
+    
+<!-- START PAGE WRAPPER -->
+<div class="container main-wrapper">
+	<div id="main-content" class="twelve columns">
+		<div class="google-map">
+			<iframe class="border" width="686" height="350" src="https://maps.google.com.uy/maps?ie=UTF8&amp;t=m&amp;ll=-34.883678,-56.160393&amp;spn=0.098571,0.235519&amp;z=12&amp;output=embed"></iframe>
+		</div>
+	<div class="contacts-block">
+		<h5>{% trans %}rsantellan_contact_title{% endtrans %}</h5>
+		<p>{% trans %}rsantellan_contact_description{% endtrans %}</p>
+		<!-- END BLOG WRAPPER -->
+		{% for label, flashes in app.session.flashbag.all %}
+			{% for flash in flashes %}
+				<div class="alert alert-{{ label }}">
+					<h5>{{ flash }}</h5>
+				</div>
+			{% endfor %}
+		{% endfor %}
+		<fieldset class="info_fieldset">
+			<div id="note"></div>            
+			<div class="contacts-form-main">
+				<form  action="{{ path('contact') }}" {{ form_enctype(form) }} method="post">
+				{{ form_errors(form) }}
+
+				{{ form_label(form.name) }}
+				{{ form_errors(form.name) }}
+				{{ form_widget(form.name) }}
+
+				{{ form_label(form.email) }}
+				{{ form_errors(form.email) }}
+				{{ form_widget(form.email) }}
+
+				{{ form_label(form.subject) }}
+				{{ form_errors(form.subject) }}
+				{{ form_widget(form.subject) }}
+				<div class="clear"></div>
+				{{ form_label(form.message) }}
+				{{ form_errors(form.message) }}
+				{{ form_widget(form.message) }}
+				{{ form_widget(form) }}
+				<input type="submit" value="{% trans %}rsantellan_contact_send{% endtrans %}" class="submit no-margin-bottom" />
+				<span></span>
+			</form>
+			<div class="clear"></div>
+			</div> <!-- end #contact-form -->
+		</fieldset>
+		<div class="clear"></div>
+	</div><!-- .contacts-block -->
+
+	</div><!-- main-content -->
+	<!-- START SIDEBAR -->
+	<div id="sidebar" class="four columns"></div><!-- sidebar -->
+</div><!-- .container -->
+
+		
+	
+{% endblock %}

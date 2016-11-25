@@ -1,0 +1,6 @@
+<ul>
+  <li><a href="{{ path('projects')}}">{% trans %}rsantellan_site_categories_all{% endtrans %}</a></li>
+  {% for category in categories %}
+    <li><a href="{{ path('projects_category', {'slug': category.slug}) }}">{{ category.name }}</a></li>  
+  {% endfor %}
+</ul>

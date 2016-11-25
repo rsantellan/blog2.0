@@ -1,0 +1,21 @@
+<li>
+	<div class="four columns">
+		<div class="stack">
+		<div class="title">
+			<a href="{{ path('project_show', {'slug': project.slug})}}">
+				{{ project.name }}
+			</a>
+		</div>
+		<div class="cta-arrow">
+			<a class="bg-arrow" href="{{ path('project_show', {'slug': project.slug})}}">
+				<img src="{{ asset('images/icons/pixel-arrow-right.png') }}" alt="" />
+			</a>
+			<span class="rd-arrow"></span>
+		</div><!-- .cta-arrow -->
+		</div><!-- stack -->
+		<div class="block">
+			<img alt="{{ project.name[:45] }}" src="{{ project.id | mAvatar(project.fullClassName, 'main', 1, true) | mImage(283, 262, 'rce') }}" />
+		</div><!-- block -->  
+	</div><!-- .four  -->
+</li>
+

@@ -12,7 +12,36 @@ app_admin_project:
 
 homepage:
     path:  /{_locale}
-    defaults: { _controller: AppBundle:Default:index,  _locale: %locale% }
+    defaults: { _controller: AppBundle:Default:index, _locale: %locale% }
     requirements:
         _locale: '%app.locales%'
 
+about_me:
+    path:  /{_locale}/about-me.html
+    defaults: { _controller: AppBundle:Default:aboutMe, _locale: %locale%}
+    requirements:
+        _locale: '%app.locales%'
+
+contact:
+    path:  /{_locale}/contact.html
+    defaults: { _controller: AppBundle:Default:contact, _locale: %locale%}
+    requirements:
+        _locale: '%app.locales%'
+
+project_show:
+    path:  /{_locale}/project-{slug}.html
+    defaults: { _controller: AppBundle:Default:projectsShow, _locale: %locale%}
+    requirements:
+        _locale: '%app.locales%'
+
+projects:
+    path:  /{_locale}/projects.html
+    defaults: { _controller: AppBundle:Default:projects, _locale: %locale%}  
+    requirements:
+        _locale: '%app.locales%'
+
+projects_category:
+    pattern:  /{_locale}/projects/{slug}.html
+    defaults: { _controller: AppBundle:Default:projectsCategory, _locale: %locale%}
+    requirements:
+        _locale: '%app.locales%'
