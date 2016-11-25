@@ -16,7 +16,8 @@ parameters:
     mailer_password:   ~
 
     # A secret key that's used to generate certain security-related tokens
-    secret:            ThisTokenIsNotSoSecretChangeIt
-    remember_me_secret: ThisTokenIsNotSoSecretChangeIt
+    secret:            663232663138345d5b315d
+    remember_me_secret: 5b616c62756d5f6176617461725f
 
     dbal_server_version: 5.5
+    session_name: default_session_name

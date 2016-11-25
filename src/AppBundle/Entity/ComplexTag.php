@@ -200,3 +200,4 @@ class ComplexTag
         $this->locale = $locale;
     }
 }
+

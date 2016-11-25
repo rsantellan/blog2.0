@@ -3,11 +3,6 @@ admin_project_index:
     defaults: { _controller: "AppBundle:Project:index" }
     methods:  GET
 
-admin_project_show:
-    path:     /{id}/show
-    defaults: { _controller: "AppBundle:Project:show" }
-    methods:  GET
-
 admin_project_new:
     path:     /new
     defaults: { _controller: "AppBundle:Project:new" }
