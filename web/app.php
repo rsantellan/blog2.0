@@ -8,10 +8,15 @@ include_once __DIR__.'/../app/bootstrap.php.cache';
 
 $kernel = new AppKernel('prod', false);
 $kernel->loadClassCache();
-//$kernel = new AppCache($kernel);
+/***
+This is for cache
+Cache is here  - $kernel = new AppCache($kernel);
 
-// When using the HttpCache, you need to call the method in your front controller instead of relying on the configuration parameter
-//Request::enableHttpMethodParameterOverride();
+When using the HttpCache, you need to call the method in your front controller instead of relying on the configuration parameter
+Cache is here - Request::enableHttpMethodParameterOverride();
+
+***/
+
 $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();

@@ -30,8 +30,7 @@ security:
                 target: /
             anonymous: ~
             remember_me:
-                #key:      rodrigoSantellanSites
-                secret:      rodrigoSantellanSites
+                secret:      "%remember_me_secret%"
                 lifetime: 3600
                 path:     /
                 domain:   ~            

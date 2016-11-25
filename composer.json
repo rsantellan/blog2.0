@@ -1,5 +1,6 @@
 {
     "name": "rodrigo/blog",
+    "description": "This is a simple blog site",
     "license": "proprietary",
     "type": "project",
     "autoload": {

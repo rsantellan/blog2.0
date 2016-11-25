@@ -34,7 +34,7 @@ class ComplexTagController extends Controller
     public function newAction(Request $request)
     {
         $complexTag = new Complextag();
-        $form = $this->createForm('AppBundle\Form\ComplexTagType', $complexTag);
+        $form = $this->createForm('AppBundle\Form\Type\ComplexTagType', $complexTag);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -72,7 +72,7 @@ class ComplexTagController extends Controller
     public function editAction(Request $request, ComplexTag $complexTag)
     {
         $deleteForm = $this->createDeleteForm($complexTag);
-        $editForm = $this->createForm('AppBundle\Form\ComplexTagType', $complexTag);
+        $editForm = $this->createForm('AppBundle\Form\Type\ComplexTagType', $complexTag);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {

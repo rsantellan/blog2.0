@@ -6,7 +6,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
-use AppBundle\Form\ContactType;
+use AppBundle\Form\Type\ContactType;
 
 class DefaultController extends Controller
 {
@@ -157,7 +157,6 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $category = $em->getRepository("AppBundle:Category")->findOneBySlug($slug);
-        $repository = $em->getRepository("AppBundle:Project");
         $dql = "select p, c from AppBundle:Project p join p.category c where c.id = :category order by p.orden desc";
         $query = $em->createQuery($dql)->setParameter('category', $category->getId());
         $query->setHint(
@@ -175,11 +174,6 @@ class DefaultController extends Controller
             1 // fallback to default values in case if record is not translated
         );
         $projects = $query->useResultCache(true, 360)->getResult();
-        /*
-        $queryProjects = $repository->createQueryBuilder('p');
-        $queryProjects->select('p')->leftJoin('p.category', 'c')->where('c.id = :category')->orderBy('p.orden', 'desc')->setParameter('category', $category->getId());
-        $projects = $queryProjects->getQuery()->useResultCache(true, 360)->getResult();
-        */
         $response =  $this->render('default/projectsThreeColumns.html.twig', array(
             'activemenu' => 'projects', 
             'projects' => $projects, 

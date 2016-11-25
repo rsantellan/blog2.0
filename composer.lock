@@ -14,12 +14,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rsantellan/symfony2-maith-admin.git",
-                "reference": "78a3ea51d55d08c933cb436f26eb357afa1d7713"
+                "reference": "c7393b040fba8b4598858c00320d2fb6280fadb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rsantellan/symfony2-maith-admin/zipball/78a3ea51d55d08c933cb436f26eb357afa1d7713",
-                "reference": "78a3ea51d55d08c933cb436f26eb357afa1d7713",
+                "url": "https://api.github.com/repos/rsantellan/symfony2-maith-admin/zipball/c7393b040fba8b4598858c00320d2fb6280fadb7",
+                "reference": "c7393b040fba8b4598858c00320d2fb6280fadb7",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
                 "source": "https://github.com/rsantellan/symfony2-maith-admin/tree/master",
                 "issues": "https://github.com/rsantellan/symfony2-maith-admin/issues"
             },
-            "time": "2016-11-24 03:01:16"
+            "time": "2016-11-25 04:23:02"
         },
         {
             "name": "Maith/Common/ImageBundle",
