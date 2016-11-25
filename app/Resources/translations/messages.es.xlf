@@ -35,7 +35,7 @@
       </trans-unit>
       <trans-unit id="67f2eff39192b4f73101d485845f1f2b" resname="rsantellan_contact_page_title">
         <source>rsantellan_contact_page_title</source>
-        <target>P&amp;aacute;gina de contacto</target>
+        <target><![CDATA[P&aacute;gina de contacto]]></target>
       </trans-unit>
       <trans-unit id="1510e4f04e5c837afb35705a9e23b625" resname="rsantellan_contact_title">
         <source>rsantellan_contact_title</source>
@@ -51,23 +51,23 @@
       </trans-unit>
       <trans-unit id="74980fad887f20006580eebee9ba0d87" resname="rsantellan_site_index_banner_1">
         <source>rsantellan_site_index_banner_1</source>
-        <target>Manejo y mantenimiento de servidores &lt;em&gt;Scripting en bash&lt;/em&gt;</target>
+        <target><![CDATA[Manejo y mantenimiento de servidores <em>Scripting en bash</em>]]></target>
       </trans-unit>
       <trans-unit id="89b2de0140e7ef1df012d0d6a7c9fced" resname="rsantellan_site_index_banner_2">
         <source>rsantellan_site_index_banner_2</source>
-        <target>Manejo de distintos frameworks PHP &lt;em&gt;CodeIgniter, Symfony, Symfony 2, Zend&lt;/em&gt;</target>
+        <target><![CDATA[Manejo de distintos frameworks PHP <em>CodeIgniter, Symfony, Symfony 2, Zend</em>]]></target>
       </trans-unit>
       <trans-unit id="24ef929eca91abce6140def35c03f49c" resname="rsantellan_site_index_banner_3">
         <source>rsantellan_site_index_banner_3</source>
-        <target>Python &lt;em&gt;Scripting para servidores, manejo remoto y web crawling&lt;/em&gt;</target>
+        <target><![CDATA[Python <em>Scripting para servidores, manejo remoto y web crawling</em>]]></target>
       </trans-unit>
       <trans-unit id="d51be740f992301ce76b47fad54016eb" resname="rsantellan_site_index_banner_4">
         <source>rsantellan_site_index_banner_4</source>
-        <target>&lt;em&gt;Manejo e instalaci&amp;oacute;n de sitios&lt;/em&gt;</target>
+        <target><![CDATA[<em>Manejo e instalaci&oacute;n de sitios</em>]]></target>
       </trans-unit>
       <trans-unit id="b980f509479adcf4900b235ba2885a81" resname="rsantellan_site_index_banner_5">
         <source>rsantellan_site_index_banner_5</source>
-        <target>&lt;em&gt;Optimizaci&amp;oacute;n y Manejo de base de datos. Migraciones y escabilidades.&lt;/em&gt;</target>
+        <target><![CDATA[<em>Optimizaci&oacute;n y Manejo de base de datos. Migraciones y escabilidades.</em>]]></target>
       </trans-unit>
       <trans-unit id="c15a11f51c6519872b63cdbb97450027" resname="rsantellan_site_index_projects_latest">
         <source>rsantellan_site_index_projects_latest</source>
@@ -115,19 +115,19 @@
       </trans-unit>
       <trans-unit id="390f6126adfe5260d6ca402f78b6ed61" resname="rsantellan_site_about_me_first_paragraph">
         <source>rsantellan_site_about_me_first_paragraph</source>
-        <target>&lt;p&gt;&amp;iexcl;Hola! mi nombre es Rodrigo Santell&amp;aacute;n, tengo 29 a&amp;ntilde;os y soy programador web. Desde hace 5 a&amp;ntilde;os que trabajo creando p&amp;aacute;ginas y sitios web para distintas empresas.&lt;/p&gt;&#13;
-&lt;p&gt;Desde peque&amp;ntilde;o me interes&amp;oacute; la computaci&amp;oacute;n, escribiendo mis primeros programas en Pascal y cuando fui m&amp;aacute;s grande, en Visual Basic 6. Me cost&amp;oacute; encaminar mi profesi&amp;oacute;n ya que durante algunos a&amp;ntilde;os trabaj&amp;eacute; en otros rubros y estuve viviendo en Irlanda para poder mejorar mi ingl&amp;eacute;s. Al volver decid&amp;iacute; que ya ten&amp;iacute;a todo lo necesario para poder enfocarme en lo que quer&amp;iacute;a hacer, as&amp;iacute; que estudi&amp;eacute; en la Universidad ORT del Uruguay la carrera t&amp;eacute;cnica de Analista en Tecnolog&amp;iacute;as de la informaci&amp;oacute;n.&lt;/p&gt;</target>
+        <target><![CDATA[<p>&iexcl;Hola! mi nombre es Rodrigo Santell&aacute;n, tengo 29 a&ntilde;os y soy programador web. Desde hace 5 a&ntilde;os que trabajo creando p&aacute;ginas y sitios web para distintas empresas.</p>
+<p>Desde peque&ntilde;o me interes&oacute; la computaci&oacute;n, escribiendo mis primeros programas en Pascal y cuando fui m&aacute;s grande, en Visual Basic 6. Me cost&oacute; encaminar mi profesi&oacute;n ya que durante algunos a&ntilde;os trabaj&eacute; en otros rubros y estuve viviendo en Irlanda para poder mejorar mi ingl&eacute;s. Al volver decid&iacute; que ya ten&iacute;a todo lo necesario para poder enfocarme en lo que quer&iacute;a hacer, as&iacute; que estudi&eacute; en la Universidad ORT del Uruguay la carrera t&eacute;cnica de Analista en Tecnolog&iacute;as de la informaci&oacute;n.</p>]]></target>
       </trans-unit>
       <trans-unit id="38b1a04ceb998c12a196f965759dcfeb" resname="rsantellan_site_about_me_second_image_caption">
         <source>rsantellan_site_about_me_second_image_caption</source>
-        <target>&lt;p&gt;Praesent odio ligula, dapibus sed, tincidunt eget, dictum nibh 435&lt;/p&gt;</target>
+        <target><![CDATA[<p>Praesent odio ligula, dapibus sed, tincidunt eget, dictum nibh 435</p>]]></target>
       </trans-unit>
       <trans-unit id="95328f77333d8847e2a0d4b5790b0a6a" resname="rsantellan_site_about_me_second_paragraph">
         <source>rsantellan_site_about_me_second_paragraph</source>
-        <target>&lt;p&gt;Desde entonces he estado trabajando en el rubro. Primero haciendo pruebas de testing automatizado en Selenium para aplicaciones web y luego trabajando en una empresa que hac&amp;iacute;a p&amp;aacute;ginas web en PHP Symfony. All&amp;iacute; aprend&amp;iacute; scripting, manejo y mantenimiento de servidores, y funcionamiento interno de PHP,&amp;nbsp; dado que trabajaba con sitios de gran concurrencia y nosotros hac&amp;iacute;amos su mantenimiento.&lt;/p&gt;&#13;
-&lt;p&gt;Un par de a&amp;ntilde;os despu&amp;eacute;s en ese trabajo no hab&amp;iacute;a m&amp;aacute;s lugar para el crecimiento profesional as&amp;iacute; que comenc&amp;eacute; a trabajar en una empresa que no se dedica a la realizaci&amp;oacute;n de p&amp;aacute;ginas web comerciales, sino a sitios de administraci&amp;oacute;n de los productos. En esta empresa me encuentro trabajando actualmente y estoy a cargo del desarrollo e investigaci&amp;oacute;n del &amp;aacute;rea web, haciendo posible que diariamente manejemos miles de ingresos a p&amp;aacute;ginas administrativas que trabajan con millones de datos.&lt;/p&gt;&#13;
-&lt;p&gt;A su vez me dedico a realizar trabajos freelance, muchos de los cu&amp;aacute;les podr&amp;aacute;n ver en la secci&amp;oacute;n &amp;ldquo;Proyectos realizados&amp;rdquo;..&lt;/p&gt;&#13;
-&lt;p&gt;Si desean m&amp;aacute;s informaci&amp;oacute;n sobre m&amp;iacute; o desean preguntarme algo no duden en utilizar el formulario de &amp;ldquo;Contacto&amp;rdquo;. &amp;iexcl;Saludos!&lt;/p&gt;</target>
+        <target><![CDATA[<p>Desde entonces he estado trabajando en el rubro. Primero haciendo pruebas de testing automatizado en Selenium para aplicaciones web y luego trabajando en una empresa que hac&iacute;a p&aacute;ginas web en PHP Symfony. All&iacute; aprend&iacute; scripting, manejo y mantenimiento de servidores, y funcionamiento interno de PHP,&nbsp; dado que trabajaba con sitios de gran concurrencia y nosotros hac&iacute;amos su mantenimiento.</p>
+<p>Un par de a&ntilde;os despu&eacute;s en ese trabajo no hab&iacute;a m&aacute;s lugar para el crecimiento profesional as&iacute; que comenc&eacute; a trabajar en una empresa que no se dedica a la realizaci&oacute;n de p&aacute;ginas web comerciales, sino a sitios de administraci&oacute;n de los productos. En esta empresa me encuentro trabajando actualmente y estoy a cargo del desarrollo e investigaci&oacute;n del &aacute;rea web, haciendo posible que diariamente manejemos miles de ingresos a p&aacute;ginas administrativas que trabajan con millones de datos.</p>
+<p>A su vez me dedico a realizar trabajos freelance, muchos de los cu&aacute;les podr&aacute;n ver en la secci&oacute;n &ldquo;Proyectos realizados&rdquo;..</p>
+<p>Si desean m&aacute;s informaci&oacute;n sobre m&iacute; o desean preguntarme algo no duden en utilizar el formulario de &ldquo;Contacto&rdquo;. &iexcl;Saludos!</p>]]></target>
       </trans-unit>
       <trans-unit id="aaa32556e9192149ccd918ec46b204e4" resname="rsantellan_site_used_complex_tags">
         <source>rsantellan_site_used_complex_tags</source>
@@ -167,151 +167,151 @@
       </trans-unit>
       <trans-unit id="2082e8bfdf6a6388c4f2f895715b3730" resname="admin_category_title">
         <source>admin_category_title</source>
-        <target>__admin_category_title</target>
+        <target>Categorias</target>
       </trans-unit>
       <trans-unit id="5a55ba04a0a2809396050bfd6c1119f4" resname="admin_category_order">
         <source>admin_category_order</source>
-        <target>__admin_category_order</target>
+        <target>Orden</target>
       </trans-unit>
       <trans-unit id="14d55c8c909e3663ef5e6ae8c97704b5" resname="admin_category_name">
         <source>admin_category_name</source>
-        <target>__admin_category_name</target>
+        <target>Nombre</target>
       </trans-unit>
       <trans-unit id="8daef12a4172d68bb41cdb23047242e1" resname="admin_category_slug">
         <source>admin_category_slug</source>
-        <target>__admin_category_slug</target>
+        <target>Slug</target>
       </trans-unit>
       <trans-unit id="2e48d81dc438b9625b87e2afaf22f2a1" resname="admin_category_actions">
         <source>admin_category_actions</source>
-        <target>__admin_category_actions</target>
+        <target>Acciones</target>
       </trans-unit>
       <trans-unit id="4d4c9ed6aab35ca6cc87b230663c8184" resname="admin_category_create">
         <source>admin_category_create</source>
-        <target>__admin_category_create</target>
+        <target>Crear</target>
       </trans-unit>
       <trans-unit id="218958470647586f720bcb5f9ecda8f9" resname="admin_category_create_entry">
         <source>admin_category_create_entry</source>
-        <target>__admin_category_create_entry</target>
+        <target>Crear nueva</target>
       </trans-unit>
       <trans-unit id="c5041f09c25b234e0bab051c9a7515d0" resname="admin_category_save">
         <source>admin_category_save</source>
-        <target>__admin_category_save</target>
+        <target>Guardar</target>
       </trans-unit>
       <trans-unit id="3b90690bc71680a33590921998c1f3a5" resname="admin_category_back_to_list">
         <source>admin_category_back_to_list</source>
-        <target>__admin_category_back_to_list</target>
+        <target>Volver al listado</target>
       </trans-unit>
       <trans-unit id="6b8eaad7fb14e099085ff036d5a6a25a" resname="admin_category_edit_entry">
         <source>admin_category_edit_entry</source>
-        <target>__admin_category_edit_entry</target>
+        <target>Editar</target>
       </trans-unit>
       <trans-unit id="7b4f33e6a22baafaf2552c4a89cf2fe8" resname="admin_category_delete">
         <source>admin_category_delete</source>
-        <target>__admin_category_delete</target>
+        <target>Borrar</target>
       </trans-unit>
       <trans-unit id="9a6fd2839bb074ecfba4d16bea394a03" resname="admin_project_title">
         <source>admin_project_title</source>
-        <target>__admin_project_title</target>
+        <target>Proyectos</target>
       </trans-unit>
       <trans-unit id="df19601353c991a76d30a90d64c2ed0b" resname="admin_project_order">
         <source>admin_project_order</source>
-        <target>__admin_project_order</target>
+        <target>Orden</target>
       </trans-unit>
       <trans-unit id="c78d041cf782f3515830e784f3c238ca" resname="admin_project_name">
         <source>admin_project_name</source>
-        <target>__admin_project_name</target>
+        <target>Nombre</target>
       </trans-unit>
       <trans-unit id="9b7b3ad3b86e0d2178e62c5ac015e956" resname="admin_project_cliente">
         <source>admin_project_cliente</source>
-        <target>__admin_project_cliente</target>
+        <target>Cliente</target>
       </trans-unit>
       <trans-unit id="5122185d0784bc84a1e94594a21a820e" resname="admin_project_tipo_trabajo">
         <source>admin_project_tipo_trabajo</source>
-        <target>__admin_project_tipo_trabajo</target>
+        <target>Tipo de trabajo</target>
       </trans-unit>
       <trans-unit id="f169791b338911df593bae1fc4a94b21" resname="admin_project_actions">
         <source>admin_project_actions</source>
-        <target>__admin_project_actions</target>
+        <target>Acciones</target>
       </trans-unit>
       <trans-unit id="255e8fcb3401cbd22eacd8cdd07071af" resname="admin_project_create">
         <source>admin_project_create</source>
-        <target>__admin_project_create</target>
+        <target>Crear</target>
       </trans-unit>
       <trans-unit id="38ec19b7ee793975d7605f4eb50b650b" resname="admin_project_create_entry">
         <source>admin_project_create_entry</source>
-        <target>__admin_project_create_entry</target>
+        <target>Crear nuevo</target>
       </trans-unit>
       <trans-unit id="3b6ab93a69af76a1afecf731e6017b2b" resname="admin_project_description">
         <source>admin_project_description</source>
-        <target>__admin_project_description</target>
+        <target><![CDATA[Descripci&oacute;n]]></target>
       </trans-unit>
       <trans-unit id="784a5f0a30ec859ec114c8a2ed8e56ed" resname="admin_project_category">
         <source>admin_project_category</source>
-        <target>__admin_project_category</target>
+        <target>Categoria</target>
       </trans-unit>
       <trans-unit id="14e7df94027c1f8818c243781bda9f4e" resname="admin_project_complex_tag">
         <source>admin_project_complex_tag</source>
-        <target>__admin_project_complex_tag</target>
+        <target>Tags</target>
       </trans-unit>
       <trans-unit id="a133f3d0229aa11a924205a61a5a08fc" resname="admin_project_save">
         <source>admin_project_save</source>
-        <target>__admin_project_save</target>
+        <target>Guardar</target>
       </trans-unit>
       <trans-unit id="f3323762e678fed4ee7625882d1d0c1e" resname="admin_project_back_to_list">
         <source>admin_project_back_to_list</source>
-        <target>__admin_project_back_to_list</target>
+        <target>Volver al listado</target>
       </trans-unit>
       <trans-unit id="1e3ac2cf5bc38a1dedde3b7d96487d61" resname="admin_project_edit_entry">
         <source>admin_project_edit_entry</source>
-        <target>__admin_project_edit_entry</target>
+        <target>Editar proyecto</target>
       </trans-unit>
       <trans-unit id="982b67aff4ffc536c5dbc17af4465dad" resname="admin_project_delete">
         <source>admin_project_delete</source>
-        <target>__admin_project_delete</target>
+        <target>Eliminar</target>
       </trans-unit>
       <trans-unit id="eb36834a3a8f8024f668731af5328869" resname="admin_complextag_title">
         <source>admin_complextag_title</source>
-        <target>__admin_complextag_title</target>
+        <target>Tags</target>
       </trans-unit>
       <trans-unit id="bce9d777d2be4240de0821dc7adb16bd" resname="admin_complextag_order">
         <source>admin_complextag_order</source>
-        <target>__admin_complextag_order</target>
+        <target>Orden</target>
       </trans-unit>
       <trans-unit id="b2eb76e57f01c266496228b26342b705" resname="admin_complextag_name">
         <source>admin_complextag_name</source>
-        <target>__admin_complextag_name</target>
+        <target>Nombre</target>
       </trans-unit>
       <trans-unit id="3781706fadf7b15438ea8e6cf0c87e4e" resname="admin_complextag_description">
         <source>admin_complextag_description</source>
-        <target>__admin_complextag_description</target>
+        <target><![CDATA[Descripci&oacute;n]]></target>
       </trans-unit>
       <trans-unit id="33945dadf958b6150929473e2030ac81" resname="admin_complextag_actions">
         <source>admin_complextag_actions</source>
-        <target>__admin_complextag_actions</target>
+        <target>Acciones</target>
       </trans-unit>
       <trans-unit id="5695498aea70dc44e307bed61cb3f18e" resname="admin_complextag_create">
         <source>admin_complextag_create</source>
-        <target>__admin_complextag_create</target>
+        <target>Crear</target>
       </trans-unit>
       <trans-unit id="2fd8af1294a84ede6675056882d5deff" resname="admin_complextag_create_entry">
         <source>admin_complextag_create_entry</source>
-        <target>__admin_complextag_create_entry</target>
+        <target>Crear nuevo</target>
       </trans-unit>
       <trans-unit id="003cbd09b510d96a18b5a4937979b438" resname="admin_complextag_save">
         <source>admin_complextag_save</source>
-        <target>__admin_complextag_save</target>
+        <target>Guardar</target>
       </trans-unit>
       <trans-unit id="adb7f5c4a30640ada78b9fdd147baa7f" resname="admin_complextag_back_to_list">
         <source>admin_complextag_back_to_list</source>
-        <target>__admin_complextag_back_to_list</target>
+        <target>Volver al listado</target>
       </trans-unit>
       <trans-unit id="669374bfcfd796a292818b2acd19076c" resname="admin_complextag_edit_entry">
         <source>admin_complextag_edit_entry</source>
-        <target>__admin_complextag_edit_entry</target>
+        <target>Editar</target>
       </trans-unit>
       <trans-unit id="9cd6a7ccf3688a69583a7afaa8961b1b" resname="admin_complextag_delete">
         <source>admin_complextag_delete</source>
-        <target>__admin_complextag_delete</target>
+        <target>Eliminar</target>
       </trans-unit>
     </body>
   </file>
