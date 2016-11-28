@@ -13,7 +13,7 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $query = $em->createQuery("select p from AppBundle:Project p order by p.id desc")
+        $query = $em->createQuery("select p from AppBundle:Project p where p.visible = 1 order by p.id desc")
                     ->setMaxResults(5);
         
         $query->setHint(
@@ -124,7 +124,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $categories = $this->retrieveCategories($request->getLocale(), $em);
 
-        $query = $em->createQuery("select p, c from AppBundle:Project p join p.category c order by p.orden desc");
+        $query = $em->createQuery("select p, c from AppBundle:Project p join p.category c where p.visible = 1 order by p.orden desc");
 
         $query->setHint(
             \Doctrine\ORM\Query::HINT_CUSTOM_OUTPUT_WALKER,
@@ -156,7 +156,7 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $category = $em->getRepository("AppBundle:Category")->findOneBySlug($slug);
-        $dql = "select p, c from AppBundle:Project p join p.category c where c.id = :category order by p.orden desc";
+        $dql = "select p, c from AppBundle:Project p join p.category c where c.id = :category and p.visible = 1 order by p.orden desc";
         $query = $em->createQuery($dql)->setParameter('category', $category->getId());
         $query->setHint(
             \Doctrine\ORM\Query::HINT_CUSTOM_OUTPUT_WALKER,

@@ -18,7 +18,8 @@ class ProjectType extends AbstractType
             ->add('cliente')
             ->add('tipo_de_trabajo')
             ->add('description')
-            ->add('orden')
+            ->add('orden', null, array('required' => false))
+            ->add('visible')
             //->add('slug')
             ->add('category')
             ->add('complexTags')        ;

@@ -67,6 +67,12 @@ class Project{
     private $locale;
     
     
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="visible", type="boolean", options={"default" : false})
+     */
+    private $visible;
 
     /**
      * @var Category
@@ -77,6 +83,7 @@ class Project{
     protected $category;
 
     /**
+     *
      * @Gedmo\Slug(fields={"name"})
      * @ORM\Column(type="string", unique=true)
     */
@@ -92,6 +99,7 @@ class Project{
      *      ) 
      */
     protected $complexTags;
+
     /**
      * Get id
      *
@@ -329,5 +337,28 @@ class Project{
     {
         return $this->complexTags;
     }
-}
 
+    /**
+     * Set visible
+     *
+     * @param boolean $visible
+     *
+     * @return Project
+     */
+    public function setVisible($visible)
+    {
+        $this->visible = $visible;
+
+        return $this;
+    }
+
+    /**
+     * Get visible
+     *
+     * @return boolean
+     */
+    public function getVisible()
+    {
+        return $this->visible;
+    }
+}

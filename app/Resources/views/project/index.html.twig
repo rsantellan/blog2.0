@@ -1,14 +1,10 @@
 {% extends 'MaithCommonAdminBundle::adminlayout.html.twig' %}
 
 {% block pagestylesheets %}
-    <link rel="stylesheet" href="{{ asset('bundles/maithcommonadmin/admin/vendor/chosen/chosen.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('bundles/maithcommonadmin/admin/vendor/datatables/jquery.dataTables.css') }}">
+
 {% endblock %}
 
 {% block javascripts %}
-    <script src="{{ asset('bundles/maithcommonadmin/admin/vendor/chosen/chosen.jquery.min.js') }}"></script>
-    <script src="{{ asset('bundles/maithcommonadmin/admin/vendor/datatables/jquery.dataTables.js') }}"></script>
-    <script src="{{ asset('bundles/maithcommonadmin/admin/js/datatables.js') }}"></script>
 {% endblock %}
 
 {% block body %}
@@ -23,6 +19,7 @@
             <th>{% trans %}admin_project_name{% endtrans %}</th>
             <th>{% trans %}admin_project_cliente{% endtrans %}</th>
             <th>{% trans %}admin_project_tipo_trabajo{% endtrans %}</th>
+            <th>{% trans %}admin_project_visible{% endtrans %}</th>
             <th>{% trans %}admin_project_actions{% endtrans %}</th>
           </tr>
         </thead>
@@ -32,6 +29,7 @@
             <th>{% trans %}admin_project_name{% endtrans %}</th>
             <th>{% trans %}admin_project_cliente{% endtrans %}</th>
             <th>{% trans %}admin_project_tipo_trabajo{% endtrans %}</th>
+            <th>{% trans %}admin_project_visible{% endtrans %}</th>
             <th>{% trans %}admin_project_actions{% endtrans %}</th>
           </tr>
         </tfoot>
@@ -42,6 +40,7 @@
                 <td>{{ project.name }}</td>
                 <td>{{ project.cliente }}</td>
                 <td>{{ project.tipodetrabajo }}</td>
+                <td>{% if project.visible %}Si{% else %}No{% endif %}</td>
               <td>
                   <a href="{{ path('admin_project_edit', { 'id': project.id }) }}"><i class="fa fa-pencil-square-o fa-2x"></i></a>
               </td>

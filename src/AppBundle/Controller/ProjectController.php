@@ -16,11 +16,29 @@ class ProjectController extends Controller
      * Lists all project entities.
      *
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $projects = $em->getRepository('AppBundle:Project')->findAll();
+        $query = $em->createQuery("select p from AppBundle:Project p order by p.id desc");
+        
+        $query->setHint(
+            \Doctrine\ORM\Query::HINT_CUSTOM_OUTPUT_WALKER,
+            'Gedmo\\Translatable\\Query\\TreeWalker\\TranslationWalker'
+        );
+
+        $query->setHint(
+            \Gedmo\Translatable\TranslatableListener::HINT_TRANSLATABLE_LOCALE,
+            $request->getLocale() // take locale from session or request etc.
+        );
+        // fallback
+        $query->setHint(
+            \Gedmo\Translatable\TranslatableListener::HINT_FALLBACK,
+            1 // fallback to default values in case if record is not translated
+        );
+        
+        $projects = $query->getResult();
+        //$projects = $em->getRepository('AppBundle:Project')->findAll();
 
         return $this->render('project/index.html.twig', array(
             'projects' => $projects,

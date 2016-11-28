@@ -195,4 +195,3 @@ class Category
         $this->locale = $locale;
     }
 }
-

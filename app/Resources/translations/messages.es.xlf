@@ -237,6 +237,10 @@
         <source>admin_project_create</source>
         <target>Crear</target>
       </trans-unit>
+      <trans-unit id="255e8fcb3401cXXXeacd8cdd07071af" resname="admin_project_visible">
+        <source>admin_project_visible</source>
+        <target>Visible?</target>
+      </trans-unit>
       <trans-unit id="38ec19b7ee793975d7605f4eb50b650b" resname="admin_project_create_entry">
         <source>admin_project_create_entry</source>
         <target>Crear nuevo</target>
