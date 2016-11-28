@@ -13,7 +13,7 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $query = $em->createQuery("select p from AppBundle:Project p where p.visible = 1 order by p.id desc")
+        $query = $em->createQuery("select p from AppBundle:Project p where p.visible = 1 order by p.orden desc")
                     ->setMaxResults(5);
         
         $query->setHint(
