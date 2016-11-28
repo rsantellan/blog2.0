@@ -36,8 +36,9 @@
     
   </head>
   <body>
-
+    {% block topmenu %}
     {{ include('default/menu.html.twig') }}
+    {% endblock %}
     
     {% block body %}
 

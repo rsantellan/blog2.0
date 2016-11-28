@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="es" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="38d5a99fa7da6d37a4364079af2c7894" resname="rsantellan_site_error_404_title">
+        <source>rsantellan_site_error_404_title</source>
+        <target><![CDATA[Página no encontrada]]></target>
+      </trans-unit>
+      <trans-unit id="fa590428c70d43862aa5fc4952691bcf" resname="rsantellan_site_error_404_message">
+        <source>rsantellan_site_error_404_message</source>
+        <target><![CDATA[Ups la página que buscas no existe. Vuelve al inicio o busca en el menú superior lo que estas buscando.]]></target>
+      </trans-unit>
+      <trans-unit id="d26a83053b0d90548b2d1521bebdd2ce" resname="rsantellan_site_error_denied_title">
+        <source>rsantellan_site_error_denied_title</source>
+        <target><![CDATA[Acceso denegado]]></target>
+      </trans-unit>
+      <trans-unit id="59a26eb5394a40de8f6d8ba4862b8b6d" resname="rsantellan_site_error_denied_message">
+        <source>rsantellan_site_error_denied_message</source>
+        <target><![CDATA[No puedes acceder a este lugar! Que estas haciendo pillin!!]]></target>
+      </trans-unit>
+      <trans-unit id="32ffa903fed38d255399d5bef1c8c485" resname="rsantellan_site_error_title">
+        <source>rsantellan_site_error_title</source>
+        <target>Algo paso</target>
+      </trans-unit>
+      <trans-unit id="d8feedb3ca70723345a444421afba565" resname="rsantellan_site_error_message">
+        <source>rsantellan_site_error_message</source>
+        <target><![CDATA[Lo siento pero algo paso y no te puedo mostrar esto. Por favor intenta mas tarde o mandame un mail!]]></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
