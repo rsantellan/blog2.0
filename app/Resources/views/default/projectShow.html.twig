@@ -52,7 +52,7 @@
                 {% if imagesAlbum is not null %}
                     {% for image in imagesAlbum.files %}
                       <div class="four-column {% if loop.index is divisible by(4) %}column-last{% endif %}">
-                        <a class="zoom" href="{{ image.fullPath | mImage(500, 500, 'mpr') }}"><img src="{{ image.fullPath | mImage(500, 500, 'rce') }}" alt="" class="border " /></a>
+                        <a class="zoom" href="{{ image.fullPath | mImage(500, 500, 't') }}"><img src="{{ image.fullPath | mImage(500, 500, 'rce') }}" alt="" class="border " /></a>
                         <p class="description">{{ image.showName }}</p>
                     </div>  
                     {% endfor %}
