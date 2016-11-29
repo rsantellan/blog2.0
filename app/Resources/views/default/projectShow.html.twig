@@ -64,10 +64,10 @@
     <!-- START SIDEBAR -->
     <div id="sidebar" class="four columns">
         <h3>{% trans %}rsantellan_site_used_complex_tags{% endtrans %}Funcionalidades utilizadas</h3>
-        {% for complexTag in project.complexTags %}
+        {% for complexTag in complexTags %}
             <h4>{{ complexTag.name }}</h4>
             <p>
-                <img alt="{{ complexTag.name[:45] }}" src="{{ complexTag.id | mAvatar(complexTag.fullClassName, 'main') | mImage(70, 70, 'ot') }}" />
+                <img alt="{{ complexTag.name[:45] }}" src="{{ complexTag.id | mAvatar(complexTag.fullClassName, 'main', 1, true) | mImage(70, 70, 'mpr') }}" />
             </p>
             <p>{{ complexTag.description }}</p>
             <hr/>

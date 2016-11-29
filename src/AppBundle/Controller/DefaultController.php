@@ -108,11 +108,35 @@ class DefaultController extends Controller
                                 'name' => 'main'
                                 )
                             );
+        $query = $em->createQuery("select ct from AppBundle:ComplexTag ct join ct.projects p where p.id = :project order by ct.orden desc");
+        
+        $query->setParameters(
+            array(
+            'project' => $project
+        ));
+
+        $query->setHint(
+            \Doctrine\ORM\Query::HINT_CUSTOM_OUTPUT_WALKER,
+            'Gedmo\\Translatable\\Query\\TreeWalker\\TranslationWalker'
+        );
+
+        $query->setHint(
+            \Gedmo\Translatable\TranslatableListener::HINT_TRANSLATABLE_LOCALE,
+            $request->getLocale() // take locale from session or request etc.
+        );
+        // fallback
+        $query->setHint(
+            \Gedmo\Translatable\TranslatableListener::HINT_FALLBACK,
+            1 // fallback to default values in case if record is not translated
+        );
+        
+        $complexTags = $query->useResultCache(true, 360)->getResult();
         $response = $this->render('default/projectShow.html.twig', array(
                     'activemenu' => 'projects', 
                     'project' => $project, 
                     'imagesAlbum' => $imagesAlbum, 
-                    'mainAlbums' => $mainAlbum
+                    'mainAlbums' => $mainAlbum,
+                    'complexTags' => $complexTags,
                     ));
         $response->setPublic();
         $response->setSharedMaxAge("3600");
