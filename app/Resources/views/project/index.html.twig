@@ -53,10 +53,14 @@
   </section>
   
 <div class="row">
-  <div class="col-lg-12 text-left">
+  <div class="col-lg-6 text-left">
       <a href="{{ path('admin_project_new') }}" class="btn btn-success">
           <i class="fa fa-pencil-square-o"></i> {% trans %}admin_project_create{% endtrans %}
       </a>
+  </div>
+  <div class="col-lg-6 text-right">
+    <a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'es'})) }}" class="btn btn-info">{% trans %}rsantellan_site_menu_spanish{% endtrans %}</a>
+    <a href="{{  path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'}))}}" class="btn btn-info">{% trans %}rsantellan_site_menu_english{% endtrans %}</a>
   </div>
 </div>
 {% endblock %}

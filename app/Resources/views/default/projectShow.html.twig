@@ -45,10 +45,15 @@
                 </div><!-- #container -->
             </div><!-- image-item -->
             <div class="text-item clearfix">
-                    <div class="title-item">
+                <div class="title-item">
                     <h6>{{ project.tipoDeTrabajo }} - {{ project.cliente }}</h6>	
-                    </div>
+                </div>
                 <p>{{ project.description }}</p>
+                {% if project.url is defined %}
+                    <div class="twelve columns clearfix" style="margin: 0px 0px 20px;">
+                        <span>Url: </span> <a href="{{ project.url }}" target="_blank">{{ project.url }}</a>
+                    </div>
+                {% endif %}
                 {% if imagesAlbum is not null %}
                     {% for image in imagesAlbum.files %}
                       <div class="four-column {% if loop.index is divisible by(4) %}column-last{% endif %}">

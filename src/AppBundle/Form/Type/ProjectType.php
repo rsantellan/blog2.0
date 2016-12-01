@@ -6,6 +6,8 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
+use Symfony\Component\Form\Extension\Core\Type\UrlType;
+
 class ProjectType extends AbstractType
 {
     /**
@@ -20,6 +22,7 @@ class ProjectType extends AbstractType
             ->add('description')
             ->add('orden', null, array('required' => false))
             ->add('visible')
+            ->add('url', UrlType::class, array('required' => false))
             //->add('slug')
             ->add('category')
             ->add('complexTags')        ;

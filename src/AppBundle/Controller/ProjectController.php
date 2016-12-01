@@ -20,7 +20,7 @@ class ProjectController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $query = $em->createQuery("select p from AppBundle:Project p order by p.id desc");
+        $query = $em->createQuery("select p from AppBundle:Project p order by p.orden desc");
         
         $query->setHint(
             \Doctrine\ORM\Query::HINT_CUSTOM_OUTPUT_WALKER,

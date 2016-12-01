@@ -17,47 +17,48 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @author Rodrigo Santellan
  */
 class Project{
-  /**
-   *
-   * @ORM\Id
-   * @ORM\Column(type="integer")
-   * @ORM\GeneratedValue(strategy="AUTO")
-   * 
-   */
-  protected $id;
+
+    /**
+    *
+    * @ORM\Id
+    * @ORM\Column(type="integer")
+    * @ORM\GeneratedValue(strategy="AUTO")
+    * 
+    */
+    protected $id;
+
+    /**
+    * @Gedmo\Translatable
+    * @ORM\Column(type="string", length=100)
+    * @Assert\NotBlank()
+    */
+    protected $name;
+
+    /**
+    * 
+    * @ORM\Column(type="string", length=100, nullable=true)
+    * @Assert\NotBlank()
+    */
+    protected $cliente;
+
+    /**
+    * @Gedmo\Translatable
+    * @ORM\Column(type="text", nullable=true)
+    */
+    protected $tipo_de_trabajo;
+
+    /**
+    * @Gedmo\Translatable
+    * @ORM\Column(type="text", nullable=true)
+    */
+    protected $description;
   
-  /**
-   * @Gedmo\Translatable
-   * @ORM\Column(type="string", length=100)
-   * @Assert\NotBlank()
-   */
-  protected $name;
   
-  /**
-   * 
-   * @ORM\Column(type="string", length=100, nullable=true)
-   * @Assert\NotBlank()
-   */
-  protected $cliente;
-  
-  /**
-   * @Gedmo\Translatable
-   * @ORM\Column(type="text", nullable=true)
-   */
-  protected $tipo_de_trabajo;
-  
-  /**
-   * @Gedmo\Translatable
-   * @ORM\Column(type="text", nullable=true)
-   */
-  protected $description;
-  
-  
-  /**
-   * @Gedmo\SortablePosition
-   * @ORM\Column(type="integer")
-   */
-  protected $orden;
+    /**
+    * @Gedmo\SortablePosition
+    * @ORM\Column(type="integer")
+    */
+    protected $orden;
 
     /**
      * @Gedmo\Locale
@@ -66,13 +67,17 @@ class Project{
      */
     private $locale;
     
-    
     /**
      * @var bool
      *
      * @ORM\Column(name="visible", type="boolean", options={"default" : false})
      */
     private $visible;
+
+    /**
+    * @ORM\Column(type="string", length=100, nullable=true)
+    */
+    protected $url;
 
     /**
      * @var Category
@@ -360,5 +365,29 @@ class Project{
     public function getVisible()
     {
         return $this->visible;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     *
+     * @return Project
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string
+     */
+    public function getUrl()
+    {
+        return $this->url;
     }
 }

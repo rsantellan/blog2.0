@@ -1,7 +1,9 @@
 admin_project_index:
-    path:     /
-    defaults: { _controller: "AppBundle:Project:index" }
+    path:     /{_locale}
+    defaults: { _controller: "AppBundle:Project:index", _locale: %locale% }
     methods:  GET
+    requirements:
+        _locale: '%app.locales%'    
 
 admin_project_new:
     path:     /new
